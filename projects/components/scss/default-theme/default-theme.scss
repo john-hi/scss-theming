@@ -1,0 +1,6 @@
+@import "_get-defaut-theme";
+@import "../all-theme";
+
+$default-theme: get-theme();
+
+@include apply-theme($default-theme);

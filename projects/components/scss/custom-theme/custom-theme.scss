@@ -1,0 +1,6 @@
+@import "_get-custom-theme";
+@import "../all-theme";
+
+$custom-theme: get-theme();
+
+@include apply-theme($custom-theme);

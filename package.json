@@ -6,7 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "build:lib": "ng build components && npm run build:lib:scss",
+    "build:lib:scss": "npm run build:lib:default-scss && npm run build:lib:custom-scss",
+    "build:lib:default-scss": "scss-bundle --project projects/components --entryFile projects/components/scss/default-theme/default-theme.scss --outFile dist/components/styles/default-theme.scss",
+    "build:lib:custom-scss": "scss-bundle --project projects/components --entryFile projects/components/scss/custom-theme/custom-theme.scss --outFile dist/components/styles/custom-theme.scss"
   },
   "private": true,
   "dependencies": {
@@ -48,6 +52,7 @@
     "lint-staged": "10.0.7",
     "ng-packagr": "^9.0.0",
     "protractor": "5.4.3",
+    "scss-bundle": "3.0.2",
     "ts-node": "8.6.2",
     "tslint": "6.0.0",
     "typescript": "3.7.5"

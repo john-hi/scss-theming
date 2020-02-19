@@ -1,0 +1,9 @@
+@mixin div-theme($theme) {
+  $foreground: map-get($theme, "foreground");
+  $background: map-get($theme, "background");
+
+  .div__themable {
+    color: $foreground;
+    background-color: $background;
+  }
+}
