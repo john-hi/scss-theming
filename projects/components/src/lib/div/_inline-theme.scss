@@ -1,0 +1,6 @@
+@import "../../../scss/choose-inline-theme.scss";
+@import "./theme";
+
+$theme: get-theme();
+
+@include div-theme($theme);

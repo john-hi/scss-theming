@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, OnInit, ViewEncapsulation } from '@
 @Component({
   selector: 'lib-div',
   templateUrl: './div.component.html',
-  styleUrls: ['./div.component.scss'],
+  styleUrls: ['./div.component.scss', './_inline-theme.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush,
   // tslint:disable-next-line: use-component-view-encapsulation
   encapsulation: ViewEncapsulation.None
