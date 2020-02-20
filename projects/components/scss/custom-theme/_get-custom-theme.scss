@@ -7,8 +7,14 @@ $indents: ("margin": 40px,
 $fonts: ("font-family": #{Georgia, 'Times New Roman', Times, serif},
   "font-size": 16px);
 
+$borders: ("border-color":cyan,
+  "border-width": 4px,
+  "border-style": double,
+  "border-radius": 40px);
+
 @function get-theme() {
   @return ("colors": $colors,
     "indents": $indents,
-    "fonts": $fonts);
+    "fonts": $fonts,
+    "borders": $borders);
 }
