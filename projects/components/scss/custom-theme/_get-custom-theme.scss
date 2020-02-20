@@ -1,3 +1,11 @@
+$colors: ("foreground": yellow,
+  "background": green);
+
+$indents: ("margin": 40px,
+  "padding": 20px);
+
+
 @function get-theme() {
-  @return ("foreground": yellow, "background": green);
+  @return ("colors": $colors,
+    "indents": $indents);
 }

@@ -1,9 +1,17 @@
 @mixin card-theme($theme) {
-  $foreground: map-get($theme, "foreground");
-  $background: map-get($theme, "background");
+  $colors: map-get($theme, "colors");
+  $foreground: map-get($colors, "foreground");
+  $background: map-get($colors, "background");
+
+  $indents: map-get($theme, "indents");
+  $margin: map-get($indents, "margin");
+  $padding: map-get($indents, "padding");
 
   .card--themable {
     color: $foreground;
     background-color: $background;
+
+    margin: $margin;
+    padding: $padding;
   }
 }
