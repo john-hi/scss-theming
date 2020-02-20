@@ -1,15 +1,15 @@
 import { NgModule } from '@angular/core';
 
-import { DivComponent } from './div/div.component';
+import { CardComponent } from './card/card.component';
 
 @NgModule({
   declarations: [
-    DivComponent
+    CardComponent
   ],
   imports: [
   ],
   exports: [
-    DivComponent
+    CardComponent
   ]
 })
 export class ComponentsModule { }

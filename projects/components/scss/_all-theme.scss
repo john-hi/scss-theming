@@ -1,5 +1,5 @@
-@import "../src/lib/div/_theme";
+@import "../src/lib/card/_theme";
 
 @mixin apply-theme($theme) {
-  @include div-theme($theme);
+  @include card-theme($theme);
 }

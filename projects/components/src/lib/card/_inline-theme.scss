@@ -3,4 +3,4 @@
 
 $theme: get-theme();
 
-@include div-theme($theme);
+@include card-theme($theme);
