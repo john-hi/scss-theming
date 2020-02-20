@@ -4,8 +4,11 @@ $colors: ("foreground": white,
 $indents: ("margin": 20px,
   "padding": 10px);
 
+$fonts: ("font-family": #{Geneva, Arial, Helvetica, sans-serif},
+  "font-size": 18px);
 
 @function get-theme() {
   @return ("colors": $colors,
-    "indents": $indents);
+    "indents": $indents,
+    "fonts": $fonts);
 }

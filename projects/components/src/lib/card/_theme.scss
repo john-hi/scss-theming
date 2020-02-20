@@ -7,11 +7,19 @@
   $margin: map-get($indents, "margin");
   $padding: map-get($indents, "padding");
 
+  $fonts: map-get($theme, "fonts");
+  $font-family: map-get($fonts, "font-family");
+  $font-size: map-get($fonts, "font-size");
+
+
   .card--themable {
     color: $foreground;
     background-color: $background;
 
     margin: $margin;
     padding: $padding;
+
+    font-family: $font-family;
+    font-size: $font-size;
   }
 }
